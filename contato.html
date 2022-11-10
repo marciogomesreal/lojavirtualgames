@@ -10,14 +10,16 @@
 <body>
     <section>
         <h2>Contato</h2>
-        <form action="" method="post">
+        <form action="https://api.staticforms.xyz/submit" method="post">
             <label>Nome</label>
-            <input type="text" name="name" placeholder="Digite seu nome">
+            <input type="text" name="name" placeholder="Digite seu nome" required>
             <label>Email</label>
-            <input type="email" name="email" placeholder="Digite seu email">
+            <input type="email" name="email" placeholder="Digite seu email" required>
             <label>Mensagem</label>
-            <textarea name="message" cols="30" rows="10" placeholder="Digite sua mensagem"></textarea>
+            <textarea name="message" cols="30" rows="10" placeholder="Digite sua mensagem" required></textarea>
             <button type="submit">Enviar</button>
+            <input type="hidden" name="accessKey" value="055b5ae5-6e31-4e1c-96b5-9bc32f72e517">
+            <input type="hidden" name="redirectTo" value="http://127.0.0.1:5500/obrigado.html">
         </form>
     </section>
 </body>
